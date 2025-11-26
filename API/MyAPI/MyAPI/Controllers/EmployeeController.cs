@@ -75,7 +75,8 @@ namespace MyAPI.Controllers
                 newemployee = await _db.Employee.FirstOrDefaultAsync(x => x.EmployeeId == employeeid);
                 if (newemployee != null)
                 {
-                    newemployee.Employenumber = $"Employee{newemployee.Row.ToString("D4")}";
+                    int count = await _db.Employee.CountAsync();
+                    newemployee.Employenumber = $"Employee{count.ToString("D4")}";
                     _db.Update(newemployee);
                     await _db.SaveChangesAsync();
                     IssuccessfullyAdded = true;

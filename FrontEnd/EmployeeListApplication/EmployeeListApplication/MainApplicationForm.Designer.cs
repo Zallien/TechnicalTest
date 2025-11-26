@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            button2 = new Button();
             label1 = new Label();
             dataGridView1 = new DataGridView();
             IdCol = new DataGridViewTextBoxColumn();
@@ -37,13 +39,17 @@
             FullnameCol = new DataGridViewTextBoxColumn();
             DateCreatedCol = new DataGridViewTextBoxColumn();
             button1 = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            removeToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(12, 43, 78);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.ForeColor = Color.White;
@@ -51,6 +57,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(224, 224, 224);
+            button2.Dock = DockStyle.Right;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Cambria", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(770, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(30, 28);
+            button2.TabIndex = 3;
+            button2.Text = "X";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -87,8 +108,11 @@
             dataGridView1.Location = new Point(12, 95);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(776, 291);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
+            dataGridView1.MouseClick += dataGridView1_MouseClick;
             // 
             // IdCol
             // 
@@ -129,6 +153,20 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { removeToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(120, 26);
+            // 
+            // removeToolStripMenuItem
+            // 
+            removeToolStripMenuItem.Font = new Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            removeToolStripMenuItem.Size = new Size(119, 22);
+            removeToolStripMenuItem.Text = "Remove";
+            removeToolStripMenuItem.Click += removeToolStripMenuItem_Click;
+            // 
             // MainApplication
             // 
             AutoScaleDimensions = new SizeF(7F, 14F);
@@ -145,6 +183,7 @@
             Load += MainApplication_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -158,5 +197,8 @@
         private DataGridViewTextBoxColumn EmployeeNumberCol;
         private DataGridViewTextBoxColumn FullnameCol;
         private DataGridViewTextBoxColumn DateCreatedCol;
+        private Button button2;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem removeToolStripMenuItem;
     }
 }

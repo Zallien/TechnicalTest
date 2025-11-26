@@ -150,6 +150,7 @@
             agetxt.Name = "agetxt";
             agetxt.Size = new Size(289, 23);
             agetxt.TabIndex = 10;
+            agetxt.KeyPress += agetxt_KeyPress;
             // 
             // submitbutton
             // 
@@ -183,6 +184,7 @@
             // 
             // sexcombobox
             // 
+            sexcombobox.AutoCompleteCustomSource.AddRange(new string[] { "Male", "Female" });
             sexcombobox.Font = new Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             sexcombobox.FormattingEnabled = true;
             sexcombobox.Items.AddRange(new object[] { "Male", "Female" });
@@ -227,6 +229,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "EmployeeModal";
             Text = "EmployeeModal";
+            Load += EmployeeModal_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
