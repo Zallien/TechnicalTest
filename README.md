@@ -7,12 +7,7 @@
 ## Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Prerequisites](#prerequisites)  
-3. [Installation & Setup](#installation--setup)  
-4. [Running the Application](#running-the-application)  
-5. [Testing Instructions](#testing-instructions)  
-6. [Features](#features)  
-7. [Notes / Known Issues](#notes--known-issues)  
-8. [Author](#author)  
+3. [Run & Setup](#installation--setup)  
 
 ---
 
