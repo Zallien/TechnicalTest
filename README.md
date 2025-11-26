@@ -33,6 +33,8 @@ Before running the application, ensure you have:
 - SSMS
 - Github
 
+---
+
 ## Frameworks
 - .Net Framework WINFORMS
 - EF Core (Entity Framework)
