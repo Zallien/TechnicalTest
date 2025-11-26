@@ -1,13 +1,15 @@
-# Employee Management Application
+# Simple Employee Management Application
 
-*Technical Test Submission – Your Name*
+*Technical Test Submission – Jullie Bert Cogueron*
 
 ---
 
 ## Table of Contents
 1. [Project Overview](#project-overview)  
-2. [Prerequisites](#prerequisites)  
-3. [Run & Setup](#installation--setup)  
+2. [Prerequisites](#prerequisites)
+3. [Technology Used](#technologies-used)
+4. [Frameworks](#frameworks)
+5. [Run & Setup](#installation--setup)  
 
 ---
 
@@ -23,6 +25,18 @@ Before running the application, ensure you have:
 - Visual Studio 2022 installed  
 - .NET 8 Runtime installed  
 - SQL Server (LocalDB or full version) (I used SSMS 2019)
+
+---
+
+## Technologies Used
+- Visual Studio 2022
+- SSMS
+- Github
+
+## Frameworks
+- .Net Framework WINFORMS
+- EF Core (Entity Framework)
+
 
 ---
 
