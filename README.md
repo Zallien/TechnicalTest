@@ -93,8 +93,6 @@ MyAPI.http :
 ---
 
 ## How to use
-**Add Employee** - Clicking the Button
----
-**Delete Employee** - Select Employee/s and Right Click
----
-**Update Employee** - Double click Employee then Update its Credentials
+- **Add Employee** - Clicking the Button
+- **Delete Employee** - Select Employee/s and Right Click
+- **Update Employee** - Double click Employee then Update its Credentials
