@@ -9,7 +9,8 @@
 2. [Prerequisites](#prerequisites)
 3. [Technology Used](#technologies-used)
 4. [Frameworks](#frameworks)
-5. [Run & Setup](#installation--setup)  
+5. [Run & Setup](#installation--setup) 
+6. [How to use] (#how-to-use) 
 
 ---
 
@@ -88,3 +89,8 @@ MyAPI.http :
 ```
 
 6. After that you can now Run the API First then Run the Frontend or the Winform Application;
+
+## How to use
+**Add Employee** - Clicking the Button
+**Delete Employee** - Select Employee/s and Right Click
+**Update Employee** - Double click Employee then Update its Credentials
